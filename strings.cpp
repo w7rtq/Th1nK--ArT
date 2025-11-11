@@ -27,5 +27,28 @@ int main()
 	char yan[]="-ArT";
 	strcat(ali,yan);
 	printf("\n%s",ali);
+	char str1[] ="Hello World!";
+	char str2[20];
+	strcpy(str2, str1);
+	printf("\n%s",str2);
+	char x[]= "Hi";
+	char y[] ="Hi";
+	char z[] ="Hello";
+	printf("\n%d",strcmp(x,y));//if equal 0
+	printf("\n%d",strcmp(z,y));// if not equal? greater? positive integer | lesser? negative integer
+	printf("\n%d",strcmp(y,z));	
+	/*FILE *fptr;// FILE is a data type, and we have cretaed a pointer(fptr) to work with it
+	fptr = fopen(filename,mode);*/
+	printf("\n\n\n");
+	int myAge = 41;
+	printf("%d",myAge);
+	printf("\n%p",&myAge);// c pointers to, give location of actual memory location in hex use %p
+	int *ptr = &myAge;
+	printf("\n%p",ptr);
+	//derefrencing : use * with a pointer variable to siplay the contents of the variable whose memory address is stroed by pointer, then not use %p
+	printf("\n%d",*ptr);
+	//noice, but dont harbour vonfusion. 1)when * is used in declaration(int*ptr), it CREATES a pointer variable
+	//when not used in decrlaration, it acts as a DEREFERENCING operator
+	//PHUN FACT: POINTERS ALLOW MANIPULATION OF MEMORY DATA
 	return 0;
 }
